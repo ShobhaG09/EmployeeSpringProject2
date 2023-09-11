@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<!--<bean name="employee" class="com.spring.Employee" autowire="autodetect">
+	  <property name="empNo" value="1"></property>
+	<property name="empName" value="Shobha"></property>
+	<property name="empSal" value="25000"></property>
+	<property name="empDoj" ref="d"></property>
+    <property name="empAddress" ref="address"></property>
+    <constructor-arg value="101"  type="java.lang.Integer"></constructor-arg>
+	<constructor-arg value="Shobha"></constructor-arg>
+	<constructor-arg value="25000"></constructor-arg>
+	<constructor-arg ref="d"></constructor-arg>
+	 <constructor-arg ref="address"></constructor-arg>
+</bean>
+
+<bean name="d" class="java.util.Date">
+		<constructor-arg value="2015"></constructor-arg>
+		<constructor-arg value="0"></constructor-arg>
+		<constructor-arg value="1"></constructor-arg>
+		<constructor-arg value="05"></constructor-arg>
+		<constructor-arg value="30"></constructor-arg>
+		<constructor-arg value="45"></constructor-arg>
+</bean>	
+
+<bean name="address" class="com.spring.Address">
+	 <property name="houseNo" value="100"></property>
+	<property name="houseName" value="Solapur "></property>
+	<property name="pinCode" value="413002"></property>
+	<constructor-arg value="100"></constructor-arg>
+		<constructor-arg value="Solapur"></constructor-arg>
+		<constructor-arg value="413002"></constructor-arg>
+</bean>
+
+  --><bean name="employee" class="com.spring.Employee" autowire="autodetect">
+	<property name="empNo" value="1"></property>
+	<property name="empName" value="Shobha"></property>
+	<property name="empSal" value="25000"></property>
+	<property name="empDoj" ref="d"></property>
+	 <property name="empAddress" ref="address"></property>
+</bean>
+
+<bean name="d" class="java.util.Date">
+		<constructor-arg value="2015"></constructor-arg>
+		<constructor-arg value="0"></constructor-arg>
+		<constructor-arg value="1"></constructor-arg>
+		<constructor-arg value="05"></constructor-arg>
+		<constructor-arg value="30"></constructor-arg>
+		<constructor-arg value="45"></constructor-arg>
+</bean>	
+
+<bean name="address" class="com.spring.Address">
+	<property name="houseNo" value="100"></property>
+	<property name="houseName" value="Solapur "></property>
+	<property name="pinCode" value="413002"></property>
+</bean>
+
+</beans>
